@@ -11,14 +11,14 @@ jobs:
           pwd
           ls
       - name: Checkout
-      - name: List of Files After checkout
+        uses: actions/checkout@v1
+      - name: List Files After Checkout
         run: |
           pwd
-          ls
-        uses: action/checkout@v1
-      - name: Simple JS actions
+          ls -a
+      - name: Simple JS Action
         id: greet
-        uses: actions/hello-world-javascript-action@v1 # pode referenciar actions externo
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: John
       - name: Log Greeting Time
