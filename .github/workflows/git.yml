@@ -8,8 +8,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Apt-utils
-        run: apt-get update && apt-get install -y --no-install-recommends apt-utils           
+     # - name: Install Apt-utils
+     #   run: apt-get update && apt-get install -y --no-install-recommends apt-utils           
       - name: Install git
         run: sudo apt-get install git-all
       - name: Checkout
