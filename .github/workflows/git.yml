@@ -12,7 +12,8 @@ jobs:
      #   run: apt-get update && apt-get install -y --no-install-recommends apt-utils           
       - name: Install git
         run: |
-          apt-get -y update
-          sudo apt-get -y install git
+          sudo apt-get update
+          sudo apt-get install git-all
+          git version
       - name: Checkout
         uses: actions/checkout@v2
